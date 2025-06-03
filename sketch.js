@@ -168,15 +168,6 @@ function draw() {
   strokeWeight(4);
   line(0, groundY + dino.h / 2, width, groundY + dino.h / 2); // 地面線延長到整個畫面
 
-  // 左下角圓角方框說明
-  let boxW = 370;   // 說明框寬度
-  let boxH = 140;  // 說明框高度
-  let boxX = 100;  // 說明框左上角 x 座標
-  let boxY = height - boxH - 50;  // 說明框左上角 y 座標
-  noStroke();
-  fill(255, 255, 255, 220); // 半透明白底
-  rect(boxX, boxY, boxW, boxH, 24); // 圓角方框
-
   fill(50, 150, 200);
   textSize(22);
   textAlign(LEFT, TOP);
