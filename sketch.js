@@ -325,13 +325,13 @@ function draw() {
 
   pop();
 
-  // 畫障礙物
-  if (obstacleType === 0) {
-    fill(0); // 黑色可穿越
-  } else {
-    fill(255, 0, 0); // 紅色需跳躍
-  }
-  rect(obstacleX, obstacleY + obstacleH / 4, obstacleW, obstacleH, 10);
+ // 畫障礙物
+if (obstacleType === 0) {
+  fill(128, 0, 255); // 紫色可穿越
+} else {
+  fill(255, 0, 0); // 紅色需跳躍
+}
+rect(obstacleX, obstacleY + obstacleH / 4, obstacleW, obstacleH, 10);
 
   // 顯示障礙物文字
   fill(255);
